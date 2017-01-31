@@ -9,7 +9,9 @@ require "bundler/setup"
 require "logger"
 require "fileutils"
 
-require_relative "../worker"
+$LOAD_PATH.unshift File.expand_path("lib")
+
+require "worker"
 
 Bundler.require
 

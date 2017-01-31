@@ -1,8 +1,8 @@
 module Worker
   extend self
 
-  PID_FILE = File.expand_path("../tmp/pids/wb.pid", __FILE__)
-  LOG_FILE = File.expand_path("../log/wb.log", __FILE__)
+  PID_FILE = File.expand_path("../../tmp/pids/wb.pid", __FILE__)
+  LOG_FILE = File.expand_path("../../log/wb.log", __FILE__)
 
   def run
     puts "Starting", "Monitor the process with:", "", " tail -f log/wb.log", ""
