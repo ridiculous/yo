@@ -26,6 +26,7 @@ module Worker
     Thread.new do
       loop do
         logger.info %w[Howdy Hi Hey Yo Hohoho].sample << ", just checkin in"
+        $redis.ping
         sleep 0.5
         if stop?
           logger.info "Stopping ..."
