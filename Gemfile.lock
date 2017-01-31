@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    redis (3.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  redis
+
+RUBY VERSION
+   ruby 2.2.4p230
+
+BUNDLED WITH
+   1.14.3

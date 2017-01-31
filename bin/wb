@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+# @usage Start and stop a ruby process that just logs to a file every couple seconds, but can be interrupted gracefully
+#
+#   bundle exec bin/wb
+#   kill -INT `cat tmp/pids/wb.pid`
+#
+require "bundler/setup"
+require "logger"
+require "fileutils"
+
+require_relative "../worker"
+
+Bundler.require
+
+Worker.run
